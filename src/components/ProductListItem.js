@@ -1,19 +1,20 @@
 import { Button, Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const fetchCacheCart = () => {
-  return JSON.parse(localStorage.getItem('lastCacheCart') || []);
-}
+// const fetchCacheCart = () => {
+  // return JSON.parse(localStorage.getItem('lastCacheCart') || '[]');
+// }
 
-const saveCacheCart = (items) => {
-  const strCache = JSON.stringify(items);
-  localStorage.setItem('lastCacheCart', strCache);
-}
+// const saveCacheCart = (items) => {
+  // const strCache = JSON.stringify(items);
+  // localStorage.setItem('lastCacheCart', strCache);
+// }
  
 const handleAddToCart = (item) => {
-  const cacheCart = fetchCacheCart();
-  const items = cacheCart.push(item);
-  saveCacheCart(items);
+  console.log('TODO: save cache cart items');
+  // const cacheCart = fetchCacheCart();
+  // cacheCart.push(item);
+  // saveCacheCart(cacheCart);
 }
 
 const ProductListItem = ({ item }) => {

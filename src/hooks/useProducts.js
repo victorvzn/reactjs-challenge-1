@@ -1,3 +1,4 @@
+import React from 'react'
 import {useContext, useEffect, useState} from 'react'
 import getProducts from '../services/getProducts'
 import ProductsContext from '../context/ProductsContext'
@@ -11,10 +12,10 @@ export function useProducts () {
     setLoading(true)
     getProducts()
       .then(products => {
-        setProducts(products)
-        setLoading(false)
-      })
-  }, [setProducts])
+          setProducts(products)
+            setLoading(false)
+          })
+        }, [setProducts])
 
   return { loading, products }
 }
