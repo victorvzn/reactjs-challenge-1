@@ -13,3 +13,22 @@
   padding-top: 50px;
   margin: auto;
 }
+
+@media (max-width: 720px) {
+  .ProductList {
+    display: grid;
+    gap: 30px 30px;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+  .ProductListItemDetail {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .ProductList {
+    display: grid;
+    gap: 30px 30px;
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+  }
+}
