@@ -1,0 +1,15 @@
+.font-17 {
+  font-size: 1.7em;
+}
+
+.ProductList {
+  display: grid;
+  gap: 30px 30px;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.ProductListItemDetail {
+  width: 50%;
+  padding-top: 50px;
+  margin: auto;
+}
